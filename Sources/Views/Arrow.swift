@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Arrow: Shape {
-    private let pointerLineLength: CGFloat = 130
+    private let pointerLineLength: CGFloat = 30
     private let arrowAngle = CGFloat(Double.pi / 6)
     let start: CGPoint
     let end: CGPoint
