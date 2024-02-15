@@ -4,14 +4,14 @@ import SwiftUI
 public struct ForceDirectedLayoutEngine: LayoutEngine {
     private let steps = 3
     public let isIncremental = true
-    public var viscosity: CGFloat = 20
-    public var friction: CGFloat = 0.7
-    public var springLength: CGFloat = 200
     public var stiffness: CGFloat = 0.09
-    public var charge: CGFloat = 50
-    public var gravitationalConstant: CGFloat = 20
+    public var springLength: CGFloat = 150
+    public var charge: CGFloat = 100
+    public var friction: CGFloat = 0.5
+    public var viscosity: CGFloat = 10
+    public var gravitationalConstant: CGFloat = 10
     public var shieldDistanceSquared: CGFloat = 250000
-    
+
     public init() { }
     
     public func layout(from layout: Layout, canvas: CGRect, edgeIndices: [[Int]]) -> Layout {
