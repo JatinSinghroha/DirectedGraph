@@ -5,8 +5,8 @@ public struct ForceDirectedLayoutEngine: LayoutEngine {
     private let steps = 3
     public let isIncremental = true
     public var stiffness: CGFloat = 0.09
-    public var springLength: CGFloat = 150
-    public var charge: CGFloat = 100
+    public var springLength: CGFloat = 250
+    public var charge: CGFloat = 150
     public var friction: CGFloat = 0.5
     public var viscosity: CGFloat = 10
     public var gravitationalConstant: CGFloat = 10
